@@ -1,0 +1,13 @@
+---
+# tasks file for myloadbalancer
+
+- package:
+        name: "haproxy"
+- package:
+        name: "httpd"
+- copy:
+        dest: "/etc/haproxy/haproxy.cfg"
+        src: "haproxy.cfg"
+- service:
+        name: "haproxy"
+        state: started

@@ -1,0 +1,5 @@
+---
+# vars file for myapache
+
+p: "httpd"
+s: "httpd"

@@ -1,0 +1,16 @@
+---
+# tasks file for myapache
+
+- package:
+        name: "httpd"
+
+- package:
+        name: "php"
+
+- copy:
+        src: "index.php"
+        dest: "/var/www/html/index.php"
+
+- service:
+        name: "httpd"
+        state: started
